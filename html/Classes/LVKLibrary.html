@@ -1,0 +1,1367 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>LVKLibrary Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Limelight Video Kit </a></h1>
+				<a id="developerHome" href="../index.html">Limelight Networks, Inc</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">LVKLibrary Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/accessKey">&nbsp;&nbsp;&nbsp;&nbsp;accessKey</option>
+	
+	<option value="//api/name/baseURL">&nbsp;&nbsp;&nbsp;&nbsp;baseURL</option>
+	
+	<option value="//api/name/organizationId">&nbsp;&nbsp;&nbsp;&nbsp;organizationId</option>
+	
+	<option value="//api/name/secret">&nbsp;&nbsp;&nbsp;&nbsp;secret</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/libraryForIdentifiable:">&nbsp;&nbsp;&nbsp;&nbsp;+ libraryForIdentifiable:</option>
+	
+	<option value="//api/name/libraryWithOrganizationId:accessKey:secret:">&nbsp;&nbsp;&nbsp;&nbsp;+ libraryWithOrganizationId:accessKey:secret:</option>
+	
+	<option value="//api/name/libraryWithOrganizationId:accessKey:secret:baseURL:">&nbsp;&nbsp;&nbsp;&nbsp;+ libraryWithOrganizationId:accessKey:secret:baseURL:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/fetchAllChannels">&nbsp;&nbsp;&nbsp;&nbsp;- fetchAllChannels</option>
+	
+	<option value="//api/name/fetchAllChannelsWithSuccess:failure:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchAllChannelsWithSuccess:failure:</option>
+	
+	<option value="//api/name/fetchAllMediaForChannelId:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchAllMediaForChannelId:</option>
+	
+	<option value="//api/name/fetchAllMediaForChannelId:success:failure:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchAllMediaForChannelId:success:failure:</option>
+	
+	<option value="//api/name/fetchChannelForId:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchChannelForId:</option>
+	
+	<option value="//api/name/fetchChannelForId:success:failure:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchChannelForId:success:failure:</option>
+	
+	<option value="//api/name/fetchMediaForId:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchMediaForId:</option>
+	
+	<option value="//api/name/fetchMediaForId:success:failure:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchMediaForId:success:failure:</option>
+	
+	<option value="//api/name/saveMedia:withSource:">&nbsp;&nbsp;&nbsp;&nbsp;- saveMedia:withSource:</option>
+	
+	<option value="//api/name/savedMedia">&nbsp;&nbsp;&nbsp;&nbsp;- savedMedia</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating Library Instances">Creating Library Instances</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Local Methods">Local Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Channel Methods">Channel Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Media Methods">Media Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/accessKey">accessKey</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/baseURL">baseURL</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/organizationId">organizationId</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/secret">secret</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/libraryForIdentifiable:">libraryForIdentifiable:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/libraryWithOrganizationId:accessKey:secret:">libraryWithOrganizationId:accessKey:secret:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/libraryWithOrganizationId:accessKey:secret:baseURL:">libraryWithOrganizationId:accessKey:secret:baseURL:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchAllChannels">fetchAllChannels</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchAllChannelsWithSuccess:failure:">fetchAllChannelsWithSuccess:failure:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchAllMediaForChannelId:">fetchAllMediaForChannelId:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchAllMediaForChannelId:success:failure:">fetchAllMediaForChannelId:success:failure:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchChannelForId:">fetchChannelForId:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchChannelForId:success:failure:">fetchChannelForId:success:failure:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchMediaForId:">fetchMediaForId:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchMediaForId:success:failure:">fetchMediaForId:success:failure:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/saveMedia:withSource:">saveMedia:withSource:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/savedMedia">savedMedia</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="LVKLibrary Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">LVKLibrary Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">LVKLibrary.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The entrypoint for fetching Channel and Media objects from a
+Limelight Orchestrate Video account.</p>
+
+<p>Must be initialized with an Organization&rsquo;s API credentials, and <strong>it is strongly
+recommended to use read-only keys</strong>, as long as the keys are coded into the app.
+Alternately, to keep API keys off of a device, an implementation should have
+its own authenticated means of getting API keys from an Orchestrate customer&rsquo;s
+personal server infrastructure.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/organizationId">&nbsp;&nbsp;organizationId</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/accessKey">&nbsp;&nbsp;accessKey</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/secret">&nbsp;&nbsp;secret</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/baseURL">&nbsp;&nbsp;baseURL</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Creating Library Instances" name="task_Creating Library Instances"></a>
+						<h3 class="subsubtitle task-title">Creating Library Instances</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/libraryWithOrganizationId:accessKey:secret:">+&nbsp;libraryWithOrganizationId:accessKey:secret:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/libraryWithOrganizationId:accessKey:secret:baseURL:">+&nbsp;libraryWithOrganizationId:accessKey:secret:baseURL:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/libraryForIdentifiable:">+&nbsp;libraryForIdentifiable:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Local Methods" name="task_Local Methods"></a>
+						<h3 class="subsubtitle task-title">Local Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/saveMedia:withSource:">&ndash;&nbsp;saveMedia:withSource:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/savedMedia">&ndash;&nbsp;savedMedia</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Channel Methods" name="task_Channel Methods"></a>
+						<h3 class="subsubtitle task-title">Channel Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchAllChannels">&ndash;&nbsp;fetchAllChannels</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchAllChannelsWithSuccess:failure:">&ndash;&nbsp;fetchAllChannelsWithSuccess:failure:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchChannelForId:">&ndash;&nbsp;fetchChannelForId:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchChannelForId:success:failure:">&ndash;&nbsp;fetchChannelForId:success:failure:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Media Methods" name="task_Media Methods"></a>
+						<h3 class="subsubtitle task-title">Media Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchMediaForId:">&ndash;&nbsp;fetchMediaForId:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchMediaForId:success:failure:">&ndash;&nbsp;fetchMediaForId:success:failure:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchAllMediaForChannelId:">&ndash;&nbsp;fetchAllMediaForChannelId:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchAllMediaForChannelId:success:failure:">&ndash;&nbsp;fetchAllMediaForChannelId:success:failure:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/accessKey" title="accessKey"></a>
+	<h3 class="subsubtitle method-title">accessKey</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The access key given to the library at initialization.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, copy, nonatomic) NSString *accessKey</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LVKLibrary.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/baseURL" title="baseURL"></a>
+	<h3 class="subsubtitle method-title">baseURL</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The base URL used by the library to perform Limelight Orchestrate Video API requests.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, copy, nonatomic) NSString *baseURL</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The base URL is the part of the URL before the path, which can encompass
+several, optional parts of the URL before the path. It includes the protocol
+and authority (which includes user info (if any), hostname, and port).</p><div class="note"><p><strong>Note:</strong> You should not need to set this unless you wish to proxy the Limelight
+Video API.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LVKLibrary.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/organizationId" title="organizationId"></a>
+	<h3 class="subsubtitle method-title">organizationId</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The organization ID given to the library at initialization.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, copy, nonatomic) NSString *organizationId</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LVKLibrary.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/secret" title="secret"></a>
+	<h3 class="subsubtitle method-title">secret</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The secret key given to the library at initialization.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, copy, nonatomic) NSString *secret</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LVKLibrary.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/libraryForIdentifiable:" title="libraryForIdentifiable:"></a>
+	<h3 class="subsubtitle method-title">libraryForIdentifiable:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Access the LVKLibrary instance that retrieved an object. Useful for
+accessing related data from the same Orchestrate Video account without having
+to keep the instance in a global register or pass it around excessively.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (LVKLibrary *)libraryForIdentifiable:(id)<em>anIdentifiableObject</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>anIdentifiableObject</em></dt>
+			<dd><p>Any object implementing <a href="../Protocols/LVKIdentifiable.html">LVKIdentifiable</a>, most notably Media and MediaSource objects.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The LVKLibrary instance associated with the <a href="../Protocols/LVKIdentifiable.html">LVKIdentifiable</a> object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LVKLibrary.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/libraryWithOrganizationId:accessKey:secret:" title="libraryWithOrganizationId:accessKey:secret:"></a>
+	<h3 class="subsubtitle method-title">libraryWithOrganizationId:accessKey:secret:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get a library instance configured with your organization&rsquo;s credentials.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (LVKLibrary *)libraryWithOrganizationId:(id)<em>organizationId</em> accessKey:(id)<em>accessKey</em> secret:(id)<em>secret</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>organizationId</em></dt>
+			<dd><p>Your Limelight Video Platform organization ID.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessKey</em></dt>
+			<dd><p>Your Limelight Video Platform access key.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>secret</em></dt>
+			<dd><p>Your Limelight Video Platform <a href="#//api/name/secret">secret</a> key.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If you leverage sub-accounts, then you can create multiple libraries, one for
+each sub-organization.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LVKLibrary.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/libraryWithOrganizationId:accessKey:secret:baseURL:" title="libraryWithOrganizationId:accessKey:secret:baseURL:"></a>
+	<h3 class="subsubtitle method-title">libraryWithOrganizationId:accessKey:secret:baseURL:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get a library instance configured with your organization&rsquo;s credentials while
+also setting the <a href="#//api/name/baseURL">baseURL</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (LVKLibrary *)libraryWithOrganizationId:(id)<em>organizationId</em> accessKey:(id)<em>accessKey</em> secret:(id)<em>secret</em> baseURL:(id)<em>baseURL</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>organizationId</em></dt>
+			<dd><p>Your Limelight Video Platform organization ID.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessKey</em></dt>
+			<dd><p>Your Limelight Video Platform access key.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>secret</em></dt>
+			<dd><p>Your Limelight Video Platform <a href="#//api/name/secret">secret</a> key.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>baseURL</em></dt>
+			<dd><p>String URL for the host to use for the content API. You should
+only need to change this in testing scenarios, if at all.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/libraryWithOrganizationId:accessKey:secret:">+ libraryWithOrganizationId:accessKey:secret:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LVKLibrary.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchAllChannels" title="fetchAllChannels"></a>
+	<h3 class="subsubtitle method-title">fetchAllChannels</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieves all channels for the configured organization via a RACSignal.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (RACSignal *)fetchAllChannels</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A RACSignal providing all <a href="../Classes/LVKChannel.html">LVKChannel</a> objects for the organization.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LVKLibrary+Channel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchAllChannelsWithSuccess:failure:" title="fetchAllChannelsWithSuccess:failure:"></a>
+	<h3 class="subsubtitle method-title">fetchAllChannelsWithSuccess:failure:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieves all channels for the configured organization via success/failure callbacks.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)fetchAllChannelsWithSuccess:(id)<em>success</em> failure:(id)<em>failure</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>Callback block receiving all <a href="../Classes/LVKChannel.html">LVKChannel</a> instances in an organization.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>Callback block receiving an NSError on fetch failure.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LVKLibrary+Channel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchAllMediaForChannelId:" title="fetchAllMediaForChannelId:"></a>
+	<h3 class="subsubtitle method-title">fetchAllMediaForChannelId:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieves all the media for a given channel via a RACSignal.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (RACSignal *)fetchAllMediaForChannelId:(id)<em>channelId</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>channelId</em></dt>
+			<dd><p>The Channel ID for which to retrieve media.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>RACSignal providing all <a href="../Classes/LVKMedia.html">LVKMedia</a> instances for the given channel ID,
+or an error on fetch failure.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LVKLibrary+Media.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchAllMediaForChannelId:success:failure:" title="fetchAllMediaForChannelId:success:failure:"></a>
+	<h3 class="subsubtitle method-title">fetchAllMediaForChannelId:success:failure:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieves all the media for a given channel via success/failure callbacks.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)fetchAllMediaForChannelId:(id)<em>channelId</em> success:(id)<em>success</em> failure:(id)<em>failure</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>channelId</em></dt>
+			<dd><p>The Channel ID for which to retrieve media.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>Callback block receiving all <a href="../Classes/LVKMedia.html">LVKMedia</a> instances for the given channel ID.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>Callback block receiving an NSError on fetch failure.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LVKLibrary+Media.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchChannelForId:" title="fetchChannelForId:"></a>
+	<h3 class="subsubtitle method-title">fetchChannelForId:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieves the <a href="../Classes/LVKChannel.html">LVKChannel</a> instance for a given ID via a RACSignal.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (RACSignal *)fetchChannelForId:(id)<em>channelId</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>channelId</em></dt>
+			<dd><p>The ID of the desired channel.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A RACSignal providing the <a href="../Classes/LVKChannel.html">LVKChannel</a> instance,
+or signalling an error on fetch failure.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LVKLibrary+Channel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchChannelForId:success:failure:" title="fetchChannelForId:success:failure:"></a>
+	<h3 class="subsubtitle method-title">fetchChannelForId:success:failure:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieves the <a href="../Classes/LVKChannel.html">LVKChannel</a> instance for a given ID via success/failure callbacks.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)fetchChannelForId:(id)<em>channelId</em> success:(id)<em>success</em> failure:(id)<em>failure</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>channelId</em></dt>
+			<dd><p>The ID of the desired channel.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>Callback block receiving the <a href="../Classes/LVKChannel.html">LVKChannel</a> instance for the provided ID.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>Callback block receiving an NSError on fetch failure.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LVKLibrary+Channel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchMediaForId:" title="fetchMediaForId:"></a>
+	<h3 class="subsubtitle method-title">fetchMediaForId:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieves the media model for a given ID via a RACSignal.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (RACSignal *)fetchMediaForId:(id)<em>mediaId</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>mediaId</em></dt>
+			<dd><p>The ID of the desired media.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>RACSignal providing the <a href="../Classes/LVKMedia.html">LVKMedia</a> instance for the given ID,
+or an error on fetch failure.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LVKLibrary+Media.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchMediaForId:success:failure:" title="fetchMediaForId:success:failure:"></a>
+	<h3 class="subsubtitle method-title">fetchMediaForId:success:failure:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieves the media model for a given ID via success/failure callbacks.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)fetchMediaForId:(id)<em>mediaId</em> success:(id)<em>success</em> failure:(id)<em>failure</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>mediaId</em></dt>
+			<dd><p>The ID of the desired media.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>Callback block receiving the <a href="../Classes/LVKMedia.html">LVKMedia</a> instance for the given media ID.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>Callback block receiving an NSError on fetch failure.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LVKLibrary+Media.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/saveMedia:withSource:" title="saveMedia:withSource:"></a>
+	<h3 class="subsubtitle method-title">saveMedia:withSource:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Saves a downloadable MediaSource to the file system for later playback.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (RACSignal *)saveMedia:(id)<em>media</em> withSource:(id)<em>source</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>media</em></dt>
+			<dd><p>The Media instance owning the source</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>source</em></dt>
+			<dd><p>The MediaSource instance to save to disk</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A RACSignal providing download progress as an NSNumber of
+the total bytes downloaded so far.</p>
+
+<p>@throws LVKLibraryUnsupportedMediaSourceTypeError if the provided source is not downloadable.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Note: a license will be asynchronously saved along with the media as soon
+as downloading has started.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LVKLibrary+Local.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/savedMedia" title="savedMedia"></a>
+	<h3 class="subsubtitle method-title">savedMedia</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieve all media stored locally.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (RACSignal *)savedMedia</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A RACSignal providing on-disk <a href="../Classes/LVKMedia.html">LVKMedia</a> instances, with the relevant
+<a href="../Classes/LVKMediaSource.html">LVKMediaSource</a> instance attached.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LVKLibrary+Local.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+                    
+                    
+
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 Limelight Networks, Inc. All rights reserved. (Last updated: 2014-11-26)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

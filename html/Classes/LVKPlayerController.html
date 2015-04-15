@@ -1,0 +1,773 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>LVKPlayerController Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Limelight Video Kit </a></h1>
+				<a id="developerHome" href="../index.html">Limelight Networks, Inc</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">LVKPlayerController Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/analyticsReporter">&nbsp;&nbsp;&nbsp;&nbsp;analyticsReporter</option>
+	
+	<option value="//api/name/drmDecoder">&nbsp;&nbsp;&nbsp;&nbsp;drmDecoder</option>
+	
+	<option value="//api/name/media">&nbsp;&nbsp;&nbsp;&nbsp;media</option>
+	
+	<option value="//api/name/mediaSource">&nbsp;&nbsp;&nbsp;&nbsp;mediaSource</option>
+	
+	<option value="//api/name/mpPlayer">&nbsp;&nbsp;&nbsp;&nbsp;mpPlayer</option>
+	
+	<option value="//api/name/view">&nbsp;&nbsp;&nbsp;&nbsp;view</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/playerWithView:">&nbsp;&nbsp;&nbsp;&nbsp;+ playerWithView:</option>
+	
+	<option value="//api/name/playerWithView:forMedia:">&nbsp;&nbsp;&nbsp;&nbsp;+ playerWithView:forMedia:</option>
+	
+	<option value="//api/name/playerWithView:forMediaSource:">&nbsp;&nbsp;&nbsp;&nbsp;+ playerWithView:forMediaSource:</option>
+	
+	
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/analyticsReporter">analyticsReporter</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/drmDecoder">drmDecoder</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/media">media</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mediaSource">mediaSource</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mpPlayer">mpPlayer</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/view">view</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playerWithView:">playerWithView:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playerWithView:forMedia:">playerWithView:forMedia:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playerWithView:forMediaSource:">playerWithView:forMediaSource:</a></span></li>
+	
+</ul></li>
+
+
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="LVKPlayerController Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">LVKPlayerController Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">MPMediaPlayback</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">LVKPlayerController.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The core video player of the Orchestrate Video SDK.</p>
+
+<p>Analagous to MPMoviePlayerController, LVKPlayerController is responsible for
+controlling video playback of content hosted on the Orchestrate Video platform.
+This player does not manage a playback <a href="#//api/name/view">view</a>, so one must be provided to it.</p>
+
+<p>Provides automatic support for Closed Captions, DRM, and analytics, and is
+a drop-in replacement for anything expecting an <MPMediaPlayback> interface.</p>
+
+<p>See <a href="../Classes/LVKPlayerViewController.html">LVKPlayerViewController</a> for automatic full-screen <a href="#//api/name/view">view</a> management.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/view">&nbsp;&nbsp;view</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/media">&nbsp;&nbsp;media</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mediaSource">&nbsp;&nbsp;mediaSource</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/drmDecoder">&nbsp;&nbsp;drmDecoder</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/analyticsReporter">&nbsp;&nbsp;analyticsReporter</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mpPlayer">&nbsp;&nbsp;mpPlayer</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playerWithView:">+&nbsp;playerWithView:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playerWithView:forMedia:">+&nbsp;playerWithView:forMedia:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playerWithView:forMediaSource:">+&nbsp;playerWithView:forMediaSource:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/analyticsReporter" title="analyticsReporter"></a>
+	<h3 class="subsubtitle method-title">analyticsReporter</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Provides access to the analytics reporter instance in use by the player.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) LVKAnalyticsReporter *analyticsReporter</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The player automatically invokes the related analytics callbacks, so no
+direct use of the reporter should be necessary. However, we provide access
+in case custom calls to our analytics backend (in addition to the existing
+functionality) is needed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/LVKAnalyticsReporter.html">LVKAnalyticsReporter</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LVKPlayerController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/drmDecoder" title="drmDecoder"></a>
+	<h3 class="subsubtitle method-title">drmDecoder</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Provides access to the drmDecoder instance in use by the player.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) LVKDRMDecoder *drmDecoder</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Especially handy for diagnosing DRM-related playback errors.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/LVKDRMDecoder.html">LVKDRMDecoder</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LVKPlayerController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/media" title="media"></a>
+	<h3 class="subsubtitle method-title">media</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The media to play back.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) LVKMedia *media</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Note that a media by itself isn&rsquo;t enough information
+to initiate playback, but a MediaSource will be automatically selected based
+on the following criteria, in the following order of preference:</p>
+
+<ul>
+<li>A media source downloaded locally to disk</li>
+<li>DRM-protected sources (indicated by <code>isProtected == true</code>)</li>
+<li>HLS sources</li>
+<li>Mobile H.264 sources</li>
+</ul>
+
+
+<p>If multiple sources fulfil the same criteria outlined above, which one
+is chosen is not specified. If more control is needed, select the source
+ahead of time and set <a href="#//api/name/mediaSource"><code>mediaSource</code></a> directly.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/mediaSource">@property mediaSource</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LVKPlayerController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mediaSource" title="mediaSource"></a>
+	<h3 class="subsubtitle method-title">mediaSource</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The specific <a href="../Classes/LVKMediaSource.html">LVKMediaSource</a> to play back.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) LVKMediaSource *mediaSource</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Use this to specify a <a href="#//api/name/media">media</a> source, as opposed to the autoselect method
+provided by setMedia.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LVKPlayerController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mpPlayer" title="mpPlayer"></a>
+	<h3 class="subsubtitle method-title">mpPlayer</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Provides access to the underlying MPMoviePlayerController instance.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) MPMoviePlayerController *mpPlayer</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This should be accessed sparingly, as any behavior triggered on the
+underlying player directly can have undefined behavior on the LVKPlayerController
+that owns it.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LVKPlayerController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/view" title="view"></a>
+	<h3 class="subsubtitle method-title">view</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The output of video playback will be sent to the provided view.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) UIView *view</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LVKPlayerController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/playerWithView:" title="playerWithView:"></a>
+	<h3 class="subsubtitle method-title">playerWithView:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Convenience initializer to set the <a href="#//api/name/view">view</a> immediately.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (LVKPlayerController *)playerWithView:(id)<em>aView</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LVKPlayerController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/playerWithView:forMedia:" title="playerWithView:forMedia:"></a>
+	<h3 class="subsubtitle method-title">playerWithView:forMedia:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Convenience initializer to set the <a href="#//api/name/view">view</a> and <a href="#//api/name/media">media</a> immediately.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (LVKPlayerController *)playerWithView:(id)<em>aView</em> forMedia:(id)<em>aMedia</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LVKPlayerController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/playerWithView:forMediaSource:" title="playerWithView:forMediaSource:"></a>
+	<h3 class="subsubtitle method-title">playerWithView:forMediaSource:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Convenience initializer to set the <a href="#//api/name/view">view</a> and <a href="#//api/name/media">media</a> source immediately.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (LVKPlayerController *)playerWithView:(id)<em>aView</em> forMediaSource:(id)<em>aMediaSource</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LVKPlayerController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+                    
+                    
+                    
+                    
+
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 Limelight Networks, Inc. All rights reserved. (Last updated: 2014-11-26)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

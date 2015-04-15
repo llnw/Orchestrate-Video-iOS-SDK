@@ -1,0 +1,244 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Limelight Video Kit Reference</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="index.html">Limelight Video Kit </a></h1>
+				<a id="developerHome" href="index.html">Limelight Networks, Inc</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">Limelight Video Kit Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar"></ul>
+		</header>
+		<article>
+			<div id="overview_contents" role="main">
+				<div class="main-navigation navigation-top">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">Limelight Video Kit Reference</h1>
+					</div>		
+				</div>
+				<div id="container">
+					
+					<div class="section section-overview index-overview">
+						
+						
+						<h1>Limelight Video Platform iOS SDK</h1>
+
+<p>In line with Limelight&rsquo;s mission to provide a consistent feature set
+across online and device playback, including analytics, closed
+captioning, DRM, ad monetization, etc, this iOS SDK enables a
+full player experience while imposing minimal integration requirements
+on Orchestrate Video customers.</p>
+
+<h2>Basic Usage / Overview</h2>
+
+<p>General steps for using the SDK:</p>
+
+<ul>
+<li>Create an instance of <a href="Classes/LVKLibrary.html">LVKLibrary</a> with your
+<a href="http://video.limelight.com">Limelight Orchestrate Video</a> API credentials</li>
+<li>Retrieve an <a href="Classes/LVKMedia.html">LVKMedia</a> from your <a href="Classes/LVKLibrary.html">LVKLibrary</a> instance</li>
+<li>Display an <a href="Classes/LVKPlayerController.html">LVKPlayerController</a> or <a href="Classes/LVKPlayerViewController.html">LVKPlayerViewController</a> instance
+and assign the media to it.</li>
+<li>Hit play! :beers:</li>
+</ul>
+
+
+<p>Note, this is very similar to how you would use Apple&rsquo;s
+<a href="https://developer.apple.com/library/ios/documentation/mediaplayer/reference/MPMoviePlayerController_Class/Reference/Reference.html">MPMediaPlayerController</a> or
+<a href="https://developer.apple.com/library/ios/documentation/mediaplayer/reference/MPMoviePlayerViewController_Class/Reference/Reference.html">MPMediaPlayerViewController</a>.</p>
+
+<h2>Hello World</h2>
+
+<p>In a new iOS project, in <code>AppDelegate.m</code>:</p>
+
+<pre><code>@implementation AppDelegate
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+  // 1) Initialize a library instance with your Limelight Video API credentials
+  LVKLibrary *library = [ LVKLibrary libraryWithOrganizationId:@"[org id]"
+                                                    accessKey:@"[access key]"
+                                                       secret:@"[secret]" ];
+
+  // 2) Set up an LVKPlayerViewController to use in the media success callback
+  LVKPlayerViewController *playerViewController = [LVKPlayerViewController new]
+
+  // 3) Fetch a media. There are many ways to do this, and we recommend using
+  //    our Reactive Cocoa API methods vs the plain callback style shown here.
+  //    See full docs for more info.
+  [library
+    fetchMediaForId:@"[ your media id ]"
+    success: ^(LVKMedia *aMedia) {
+
+      // 4) Profit!
+      playerViewController.media = aMedia;
+      [playerViewController play];
+    }
+    failure: ^(NSError *error) {
+       NSLog(@"Media fetch error: %@", error);
+    }];
+
+  // stock window setup; using the playerViewController directly for this example
+  self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+  self.window.rootViewController = playerViewController;
+  [self.window makeKeyAndVisible];
+}
+
+@end
+</code></pre>
+
+<h2>Components For Advanced Uses</h2>
+
+<ul>
+<li><a href="Classes/LVKPlayerController.html">LVKPlayerController</a>: Play video with your own view management.</li>
+<li><a href="Classes/LVKAnalyticsReporter.html">LVKAnalyticsReporter</a>: Implement analytics in a custom video app.</li>
+<li><a href="Classes/LVKDRMDecoder.html">LVKDRMDecoder</a>: Play back DRM-enabled content in a custom video app.</li>
+</ul>
+
+
+<h2>Installation</h2>
+
+<h3>Prerequisites</h3>
+
+<ol>
+<li>A Limelight Video Platform account. You can sign-up for a
+<a href="http://www.limelightvideoplatform.com/request-trial/">free, 30-day trial</a>.</li>
+<li>A Macintosh computer with Xcode. You can install Xcode from the
+<a href="https://itunes.apple.com/us/app/xcode/id497799835">Mac App Store</a>.</li>
+</ol>
+
+
+<h3>Installation</h3>
+
+<h4>CocoaPods (preferred)</h4>
+
+<ol>
+<li><p>Set up <a href="http://www.cocoapods.org">CocoaPods</a></p></li>
+<li><p>Add LimelightVideoKit to your Podfile:</p>
+
+<p> <code>pod 'LimelightVideoKit'</code></p></li>
+<li><p>Execute $<code>pod install</code></p></li>
+</ol>
+
+
+<h4>Manual</h4>
+
+<ol>
+<li>[Download] the static library to your computer.</li>
+<li>Add the static library to your Xcode project. To add a static library
+to an Xcode project, drag and drop the file onto Xcode.</li>
+</ol>
+
+
+<h2>Support</h2>
+
+<p>TODO</p>
+
+<h2>Versioning</h2>
+
+<p>We use <a href="http://semver.org/spec/v2.0.0.html">Semantic Versioning 2.0.0</a></p>
+
+<h2>Licence</h2>
+
+<p>TODO</p>
+						
+						
+					</div>
+					
+                        
+                    
+					
+					
+					<div class="index-column">
+						<h2 class="index-title">Class References</h2>
+						<ul>
+							
+							<li><a href="Classes/LVKAnalyticsReporter.html">LVKAnalyticsReporter</a></li>
+							
+							<li><a href="Classes/LVKChannel.html">LVKChannel</a></li>
+							
+							<li><a href="Classes/LVKDRMDecoder.html">LVKDRMDecoder</a></li>
+							
+							<li><a href="Classes/LVKLibrary.html">LVKLibrary</a></li>
+							
+							<li><a href="Classes/LVKMedia.html">LVKMedia</a></li>
+							
+							<li><a href="Classes/LVKMediaSource.html">LVKMediaSource</a></li>
+							
+							<li><a href="Classes/LVKMediaSourceHLS.html">LVKMediaSourceHLS</a></li>
+							
+							<li><a href="Classes/LVKMediaSourceMobileH264.html">LVKMediaSourceMobileH264</a></li>
+							
+							<li><a href="Classes/LVKMediaSourceWidevine.html">LVKMediaSourceWidevine</a></li>
+							
+							<li><a href="Classes/LVKMediaSourceWidevineOffline.html">LVKMediaSourceWidevineOffline</a></li>
+							
+							<li><a href="Classes/LVKModel.html">LVKModel</a></li>
+							
+							<li><a href="Classes/LVKPlayerController.html">LVKPlayerController</a></li>
+							
+							<li><a href="Classes/LVKPlayerViewController.html">LVKPlayerViewController</a></li>
+							
+						</ul>
+					</div>
+					
+					
+						
+					<div class="index-column">
+						
+                        
+						<h2 class="index-title">Constant References</h2>
+						<ul>
+                        
+                        <li><a href="Constants/LVKMediaType.html">LVKMediaType</a></li>
+                        
+						</ul>
+						
+                        
+						
+						<h2 class="index-title">Category References</h2>
+						<ul>
+							
+							<li><a href="Categories/NSData+LVKAdditions.html">NSData(LVKAdditions)</a></li>
+							
+							<li><a href="Categories/NSDate+LVKAdditions.html">NSDate(LVKAdditions)</a></li>
+							
+							<li><a href="Categories/NSString+LVKAdditions.html">NSString(LVKAdditions)</a></li>
+							
+							<li><a href="Categories/NSURLRequest+LVKAdditions.html">NSURLRequest(LVKAdditions)</a></li>
+							
+						</ul>
+						
+					</div>
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 Limelight Networks, Inc. All rights reserved. (Last updated: 2014-11-26)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+	
+					</div>
+				</div>
+			</div>
+		</article>		
+	</body>
+</html>
