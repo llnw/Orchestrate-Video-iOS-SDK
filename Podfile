@@ -3,7 +3,7 @@ source 'git@github.llnw.net:llnw/PodSpecs.git'
 
 platform :ios, '8.0'
 
-xcodeproj 'lvk-ios-integration', 'Coverage' => :debug
+xcodeproj '<Your_Project_Name>', 'Coverage' => :debug
 
 pod 'AFNetworking','~> 1.3'
 pod 'Base64nl', '~> 1.1'
