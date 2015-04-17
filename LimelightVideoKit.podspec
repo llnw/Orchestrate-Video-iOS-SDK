@@ -14,7 +14,7 @@ s.name     = 'LimelightVideoKit'
   s.requires_arc = true
   s.homepage = 'http://support.video.limelight.com'
   s.author   = { 'Limelight Networks' => 'support@llnw.com' }
-  s.source   = { :git => 'https://github.llnw.net/limelight-sdk-ios.git',
+  s.source   = { :git => 'https://github.llnw.net/llnw/limelight-sdk-ios.git',
                  :tag => s.version.to_s}
   s.source_files = 'Headers/*.h'
   s.vendored_libraries = "Library/libLimelightVideoKitUniversal.a"
