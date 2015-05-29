@@ -32,4 +32,20 @@ static NSTimeInterval const kDefaultExpiryTimeInterval = 300;
 - (NSURLRequest *)lvk_sign:(LVKLibrary *)library;
 
 
+
+/**
+* Returns Signed URL
+*
+* @param httpVerb GET, POST, etc... It will be converted to lowercase.
+* @param resourceURL The URL the REST request will be sent to.
+* @param accessKey An organization's access key.
+* @param secret The secret to use to sign the request.
+* @param params The name-value pairs that will be appended to the query-string.
+*
+* @return An NSString URL representation that has been signed.
+*/
+
+NSString *authenticateRequest(NSString *httpVerb, NSString *resourceURL, NSString *accessKey, NSString *secretKey, NSDictionary *params);
+
+
 @end
