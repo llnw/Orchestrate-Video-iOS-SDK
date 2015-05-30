@@ -56,7 +56,7 @@ pod 'Reachability', '~>3.1'
 pod 'ReactiveCocoa', '~>2.1' 
 pod 'Widevine-iOS-SDK', '~>6.0.0'
 ```
-**To add LimelightVideoKit through CocoaPods ** 
+**To add LimelightVideoKit through CocoaPods** 
 The easiest way to add the SDK and its dependencies to your project is to use CocoaPods. 
 If you do not have CocoaPods installed, see the installation instructions on the [CocoaPods](https://guides.cocoapods.org/using/getting-started.html) site.
 
