@@ -132,12 +132,12 @@ Product Name: SimpleApplication
 Organization Name: <YourCompanyName>
 Company Identifier:<com.yourcompany>
 
-[Specify project details](Screenshots/Project Details.png "Specify Project Details")
+![Specify project details](Screenshots/Project Details.png "Specify Project Details")
 
 4.	Select the location where you want to save your project and click Create.
 You can select checkbox in front of ‘Source Control’ if you want to create a git repository for your project.
 
-[Select project location](Screenshots/Select Layout.png "Select project location")
+![Select project location](Screenshots/Select Layout.png "Select project location")
 
 5.	Now close the project as we need to install pods and after that we will use .xcworkspace file created by that.
 
