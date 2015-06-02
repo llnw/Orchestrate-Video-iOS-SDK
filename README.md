@@ -230,8 +230,8 @@ pod 'OBSlider', '~>1.1'
 pod 'Reachability', '~>3.1' 
 pod 'ReactiveCocoa', '~>2.1' 
 pod 'Widevine-iOS-SDK', '~>6.0.0'
-
-###Code the simple videoplayer application
+```
+### Code the simple videoplayer application
 You are just few steps away from playing sample media in your application.
 
 1.	Open the SampleApplication.xcworkspace file in Xcode.
