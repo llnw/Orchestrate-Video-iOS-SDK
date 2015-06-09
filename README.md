@@ -243,10 +243,10 @@ You are just few steps away from playing sample media in your application.
 ```
 NSDictionary *media;
 LVKLibrary *library;
-
 ```
-	-	Define initialization method to setup sample media and libraryd
-		Here you would need to give you Limelight Video Account credentials and media ID
+
+-	Define initialization method to setup sample media and library.
+	Here you would need to give your Limelight Video Account credentials and media ID.
 
 ```
 + (void)initialize {
