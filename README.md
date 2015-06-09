@@ -138,7 +138,7 @@ Company Identifier:<com.yourcompany>
 4.	Select the location where you want to save your project and click Create.
 You can select checkbox in front of ‘Source Control’ if you want to create a git repository for your project.
 
-![Select project location](Screenshots/Select Layout.png "Select project location")
+![Select project location](Screenshots/Select Location.png "Select project location")
 
 5.	Now close the project as we need to install pods and after that we will use .xcworkspace file created by that.
 
@@ -240,21 +240,14 @@ You are just few steps away from playing sample media in your application.
 3.	Modify your ViewController implementation as given below.
 
 	-	In ViewController.m file create placeholder variables for media and library as 	below.
-	```
-	NSDictionary *media;
-	LVKLibrary *li
-	```
-	-	Define initialization method to setup sample media and library
-
-	-	In ViewController.m file create placeholder variables for media and library as 	below.
 ```
 NSDictionary *media;
 LVKLibrary *library;
 ```
--	Define initialization method to setup sample media and libraryd
-	Here you would need to give you Limelight Video Account credentials and media ID
+	-	Define initialization method to setup sample media and libraryd
+		Here you would need to give you Limelight Video Account credentials and media ID
 
-	```
+```
 + (void)initialize {
     if(!media){
         media = @{@"Sample Media":@"722171d57d8f4b66862defbfb77e7096"};
