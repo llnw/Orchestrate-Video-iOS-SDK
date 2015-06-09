@@ -238,21 +238,20 @@ You are just few steps away from playing sample media in your application.
 1.	Open the SampleApplication.xcworkspace file in Xcode.
 2.	Go to ‘Build Settings’ of your application and make sure the architectures is set ‘$(ARCHS_STANDARD_32_BIT) - $(ARCHS_STANDARD_32_BIT)’. If not then, set it to 32 bit. Please check the same thing for Pods build settings as well.
 3.	Modify your ViewController implementation as given below.
-<<<<<<< HEAD
+
 	-	In ViewController.m file create placeholder variables for media and library as 	below.
 	```
 	NSDictionary *media;
 	LVKLibrary *li
 	```
 	-	Define initialization method to setup sample media and library
-=======
--	In ViewController.m file create placeholder variables for media and library as 	below.
+
+	-	In ViewController.m file create placeholder variables for media and library as 	below.
 ```
 NSDictionary *media;
 LVKLibrary *library;
 ```
--	Define initialization method to setup sample media and library
->>>>>>> 0c3dab92956457168a3fd1f6a2352ca9f979c36d
+-	Define initialization method to setup sample media and libraryd
 	Here you would need to give you Limelight Video Account credentials and media ID
 
 	```
