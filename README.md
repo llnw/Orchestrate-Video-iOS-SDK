@@ -84,21 +84,21 @@ end
 ```
 
 2.	In the “Build Phases” tab of your application target, add the following frameworks if missing
-- 	‘AVFoundation’
--  	‘CFNetwork’
--	‘CoreData’
--	‘CoreGraphics’
--	‘CoreMedia’
--	‘Foundation’
--	‘MediaPlayer’
--	‘MobileCoreServices’
--	‘SystemConfiguration’
--	‘UIKit’
+	- 	‘AVFoundation’
+	-  	‘CFNetwork’
+	-	‘CoreData’
+	-	‘CoreGraphics’
+	-	‘CoreMedia’
+	-	‘Foundation’
+	-	‘MediaPlayer’
+	-	‘MobileCoreServices’
+	-	‘SystemConfiguration’
+	-	‘UIKit’
 
 
 
 3.	 On the “Build Settings” tab of your application target:
--     	 Add –ObjC to “Other Linker Flags”.
+	-     	 Add –ObjC to “Other Linker Flags”.
 
 
 
