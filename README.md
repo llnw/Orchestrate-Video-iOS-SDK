@@ -109,6 +109,7 @@ end
 This tutorial helps you create basic application using LimelightVideoSDK to play a sample media.
 
 There are two ways to try this Sample Application.
+
 1.	Manually setup the project by following the steps below.
 2.	Download the sample project as a starting point from Github
 -	Get the entire project from here(Need to provide git repository link).
