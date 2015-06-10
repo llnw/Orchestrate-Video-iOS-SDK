@@ -23,38 +23,38 @@
     *	Add –ObjC to “Other Linker Flags”.
 5.	Add following third party libraries to your project
 
-|Library Name	|Version  |
-|---------------|---------|
-|AFNetworking	|1.3      |
-|Base64nl	|1.1      |
-|CocoaLumberjack|1.6      |
-|Mantle 	|1.3.1    |
-|OBSlider	|1.1      |
-|Reachability	|3.1      |
-|ReactiveCocoa  |2.1      |
-|Widevine-iOS-SDK|6.0.0   |
+	|Library Name	|Version  |
+	|---------------|---------|
+	|AFNetworking	|1.3      |
+	|Base64nl	|1.1      |
+	|CocoaLumberjack|1.6      |
+	|Mantle 	|1.3.1    |
+	|OBSlider	|1.1      |
+	|Reachability	|3.1      |
+	|ReactiveCocoa  |2.1      |
+	|Widevine-iOS-SDK|6.0.0   |
 
-Getting all these third party libraries manually is tedious task.
-You can use CocoaPods to get these libraries.
+	Getting all these third party libraries manually is tedious task.
+	You can use CocoaPods to get these libraries.
 
-Sample Podfile is as follows.
+	Sample Podfile is as follows.
 
-    ```objective-c
-    source 'https://github.com/CocoaPods/Specs.git' 
-    source 'git@github.llnw.net:llnw/PodSpecs.git' 
+    	```objective-c
+    	source 'https://github.com/CocoaPods/Specs.git' 
+    	source 'git@github.llnw.net:llnw/PodSpecs.git' 
 
-    platform :ios, '8.0'  
-    xcodeproj '<Your_Project_Name>', 'Coverage' => :debug  
+    	platform :ios, '8.0'  
+    	xcodeproj '<Your_Project_Name>', 'Coverage' => :debug  
 
-    pod 'AFNetworking','~> 1.3' 
-    pod 'Base64nl', '~> 1.1' 
-    pod 'CocoaLumberJack', '~> 1.6' 
-    pod 'Mantle', '~> 1.3.1' 
-    pod 'OBSlider', '~>1.1' 
-    pod 'Reachability', '~>3.1' 
-    pod 'ReactiveCocoa', '~>2.1' 
-    pod 'Widevine-iOS-SDK', '~>6.0.0'
-    ```
+    	pod 'AFNetworking','~> 1.3' 
+    	pod 'Base64nl', '~> 1.1' 
+    	pod 'CocoaLumberJack', '~> 1.6' 
+    	pod 'Mantle', '~> 1.3.1' 
+    	pod 'OBSlider', '~>1.1' 
+    	pod 'Reachability', '~>3.1' 
+    	pod 'ReactiveCocoa', '~>2.1' 
+    	pod 'Widevine-iOS-SDK', '~>6.0.0'
+    	```
 
 **To add LimelightVideoKit through CocoaPods** 
 
@@ -62,27 +62,27 @@ The easiest way to add the SDK and its dependencies to your project is to use Co
 If you do not have CocoaPods installed, see the installation instructions on the [CocoaPods](https://guides.cocoapods.org/using/getting-started.html) site.
 
 1. 	Use sample Podfile and install all the required pods by using command ‘pod install’ in your application project directory.
-    The below text should be saved into a file named "Podfile":
+    	The below text should be saved into a file named "Podfile":
     
-    ```objective-c
-    source 'https://github.com/CocoaPods/Specs.git'
-    source 'git@github.llnw.net:llnw/PodSpecs.git'
+    	```objective-c
+    	source 'https://github.com/CocoaPods/Specs.git'
+    	source 'git@github.llnw.net:llnw/PodSpecs.git'
 
-    platform :ios, '8.0'
+    	platform :ios, '8.0'
 
-    xcodeproj 'lvk-ios-integration', 'Coverage' => :debug
+    	xcodeproj '<Your_Project_Name>', 'Coverage' => :debug
 
-    pod 'LimelightVideoKit', :git => 'https://github.llnw.net/llnw/limelight-sdk-ios.git'
+    	pod 'LimelightVideoKit', :git => 'https://github.llnw.net/llnw/limelight-sdk-ios.git'
 
-    # Remove 64-bit build architecture from Pods targets
-    post_install do |installer|
-      installer.project.targets.each do |target|
-        target.build_configurations.each do |configuration|
-          target.build_settings(configuration.name)['ARCHS'] = '$(ARCHS_STANDARD_32_BIT)'
-        end
-      end
-    end
-    ```
+    	# Remove 64-bit build architecture from Pods targets
+    	post_install do |installer|
+     	  installer.project.targets.each do |target|
+            target.build_configurations.each do |configuration|
+              target.build_settings(configuration.name)['ARCHS'] = '$(ARCHS_STANDARD_32_BIT)'
+            end
+      	  end
+    	end
+    	```
 
 2.	In the “Build Phases” tab of your application target, add the following frameworks if missing
 	*  ‘AVFoundation’
@@ -129,9 +129,9 @@ If you do not have it already please install Xcode 6 or later.
 
 	> Product Name: SimpleApplication
 	>
-	> Organization Name: <YourCompanyName>
+	> Organization Name: ><YourCompanyName>>
 	>
-	> Company Identifier:<com.yourcompany>
+	> Company Identifier: ><com.yourcompany>>
 
    	![Specify project details](Screenshots/Project Details.png "Specify Project Details")
 
@@ -239,6 +239,8 @@ You are just few steps away from playing sample media in your application.
 
 1.	Open the SampleApplication.xcworkspace file in Xcode.
 2.	Go to ‘Build Settings’ of your application and make sure the architectures is set ‘$(ARCHS_STANDARD_32_BIT) - $(ARCHS_STANDARD_32_BIT)’. If not then, set it to 32 bit. Please check the same thing for Pods build settings as well.
+
+	![Set architecture to 32 BIT](Screenshots/Architecture Settings.png "Set architecture to 32 BIT")
 3.	Modify your ViewController implementation as given below.
      -	In ViewController.m file create placeholder variables for media and library as below before the implementation..
 	
