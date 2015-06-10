@@ -39,7 +39,7 @@ You can use CocoaPods to get these libraries.
 
 Sample Podfile is as follows.
 
-    ```obejctive-c
+    ```objective-c
     source 'https://github.com/CocoaPods/Specs.git' 
     source 'git@github.llnw.net:llnw/PodSpecs.git' 
 
@@ -86,8 +86,8 @@ If you do not have CocoaPods installed, see the installation instructions on the
 
 2.	In the “Build Phases” tab of your application target, add the following frameworks if missing
 	*  ‘AVFoundation’
-	*  ‘CFNetwork’
-        *  ‘CoreData’
+	*  ‘CFNetwork'
+	*  ‘CoreData’
 	*  ‘CoreGraphics’
 	*  ‘CoreMedia’
 	*  ‘Foundation’
@@ -119,25 +119,26 @@ If you do not have it already please install Xcode 6 or later.
 1.	Create a new project in Xcode.
         Open Xcode and you will see screen as below.
 
-![Create New Project](Screenshots/Create New Project.png "Create a new project in Xcode 6 or later")
+	![Create New Project](Screenshots/Create New Project.png "Create a new project in Xcode 6 or later")
 
 2.	Select **Single View Application** for the template and click **Next**.
 
-![Select Layout](Screenshots/Select Layout.png "Select Single View Application laylout")
+	![Select Layout](Screenshots/Select Layout.png "Select Single View Application laylout")
 
 3.	Set the project details as follows.
->Product Name: SimpleApplication
->
->Organization Name: <YourCompanyName>
->
->Company Identifier:<com.yourcompany>
 
-![Specify project details](Screenshots/Project Details.png "Specify Project Details")
+	> Product Name: SimpleApplication
+	>
+	> Organization Name: <YourCompanyName>
+	>
+	> Company Identifier:<com.yourcompany>
+
+   	![Specify project details](Screenshots/Project Details.png "Specify Project Details")
 
 4.	Select the location where you want to save your project and click Create.
-You can select checkbox in front of ‘Source Control’ if you want to create a git repository for your project.
+	You can select checkbox in front of ‘Source Control’ if you want to create a git repository for your project.
 
-![Select project location](Screenshots/Select Location .png "Select project location")
+	![Select project location](Screenshots/Select Location .png "Select project location")
 
 5.	Now close the project as we need to install pods and after that we will use ".xcworkspace" file created by that.
 
@@ -145,35 +146,35 @@ You can select checkbox in front of ‘Source Control’ if you want to create a
 The easiest way to add the SDK and its dependencies to your project is to use CocoaPods. If you do not have CocoaPods installed, see the installation instructions on the [CocoaPods](https://guides.cocoapods.org/using/getting-started.html) site.
 
 6.	Use sample Podfile and install all the required pods by using command ‘pod install’ in your application project directory. 
-You should see series of messages in the terminal saying that LimelightVideoKit along with other third party libraries required for the SDK are installed.
+	You should see series of messages in the terminal saying that LimelightVideoKit along with other third party libraries required for the SDK are installed.
 
-      Sample Podfile is as follows
+      	Sample Podfile is as follows
 
-```objective-c
-source 'https://github.com/CocoaPods/Specs.git'
-source 'git@github.llnw.net:llnw/PodSpecs.git'
+	```objective-c
+	source 'https://github.com/CocoaPods/Specs.git'
+	source 'git@github.llnw.net:llnw/PodSpecs.git'
 
-platform :ios, '8.0'
+	platform :ios, '8.0'
 
-xcodeproj 'SampleApplication', 'Coverage' => :debug
+	xcodeproj 'SampleApplication', 'Coverage' => :debug
 
-pod 'LimelightVideoKit', :git => 'https://github.llnw.net/llnw/limelight-sdk-ios.git'
+	pod 'LimelightVideoKit', :git => 'https://github.llnw.net/llnw/limelight-sdk-ios.git'
 
-# Remove 64-bit build architecture from Pods targets
-post_install do |installer|
-  installer.project.targets.each do |target|
-    target.build_configurations.each do |configuration|
-      target.build_settings(configuration.name)['ARCHS'] = '$(ARCHS_STANDARD_32_BIT)'
-    end
-  end
-end
-```
+	# Remove 64-bit build architecture from Pods targets
+	post_install do |installer|
+  	  installer.project.targets.each do |target|
+    	    target.build_configurations.each do |configuration|
+              target.build_settings(configuration.name)['ARCHS'] = '$(ARCHS_STANDARD_32_BIT)'
+    	    end
+          end
+	end
+	```
 
-You should see following line as last line.
+	You should see following line as last line.
 
->[!] Please close any current Xcode sessions and use `SampleApplication.xcworkspace` for this project from now on.
+	>[!] Please close any current Xcode sessions and use `SampleApplication.xcworkspace` for this project from now on.
 
-The ‘pod install’ creates .xcworkspace file. This step onwards you should use .xcworkspace to open your project.
+	The ‘pod install’ creates .xcworkspace file. This step onwards you should use .xcworkspace to open your project.
 
 If you do not wish to use CocoaPods then add LimelightVideoKit manually to your project by using following steps
 
@@ -199,16 +200,16 @@ If you do not wish to use CocoaPods then add LimelightVideoKit manually to your 
 10.	Add following third party libraries to your project
 
 
-|Library Name   |Version  |
-|---------------|---------|
-|AFNetworking   |1.3      |
-|Base64nl       |1.1      |
-|CocoaLumberjack|1.6      |
-|Mantle         |1.3.1    |
-|OBSlider       |1.1      |
-|Reachability   |3.1      |
-|ReactiveCocoa  |2.1      |
-|Widevine-iOS-SDK|6.0.0   |
+	|Library Name   |Version  |
+	|---------------|---------|
+	|AFNetworking   |1.3      |
+	|Base64nl       |1.1      |
+	|CocoaLumberjack|1.6      |
+	|Mantle         |1.3.1    |
+	|OBSlider       |1.1      |
+	|Reachability   |3.1      |
+	|ReactiveCocoa  |2.1      |
+	|Widevine-iOS-SDK|6.0.0   |
 
 	Getting all these third party libraries manually is tedious task.
 	You can use CocoaPods just to get these libraries.
@@ -261,7 +262,7 @@ You are just few steps away from playing sample media in your application.
 	}
 	```
 
-     -	viewDidLoad is automatically generated method. In viewDidLoad, add following code below the exisiting code.
+     -	"viewDidLoad" is automatically generated method. In viewDidLoad, add following code below the exisiting code.
 
 	```objective-c
 	[library fetchMediaForId:media[@"Sample Media"]
@@ -277,7 +278,7 @@ You are just few steps away from playing sample media in your application.
                      }];
 	```
      - 	At this point, compiler will complain about some of the unknown types.
-       	>e.g. Unknown type name 'LVKLibrary'.
+       	> e.g. Unknown type name 'LVKLibrary'.
        	So we need to add missing header files as follows. 
 
        	```objective-c
