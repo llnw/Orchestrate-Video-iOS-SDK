@@ -147,8 +147,7 @@ The easiest way to add the SDK and its dependencies to your project is to use Co
 
 6.	Use sample Podfile and install all the required pods by using command ‘pod install’ in your application project directory. 
 	You should see series of messages in the terminal saying that LimelightVideoKit along with other third party libraries required for the SDK are installed.
-
-      	Sample Podfile is as follows
+	Sample Podfile is as follows.
 
 	```objective-c
 	source 'https://github.com/CocoaPods/Specs.git'
