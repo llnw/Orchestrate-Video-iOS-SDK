@@ -39,7 +39,7 @@
 
 	Sample Podfile is as follows.
 
-    	```objective-c
+	```objective-c
     	source 'https://github.com/CocoaPods/Specs.git' 
     	source 'git@github.llnw.net:llnw/PodSpecs.git' 
 
@@ -129,9 +129,9 @@ If you do not have it already please install Xcode 6 or later.
 
 	> Product Name: SimpleApplication
 	>
-	> Organization Name: ><YourCompanyName>>
+	> Organization Name: 'YourCompanyName'
 	>
-	> Company Identifier: ><com.yourcompany>>
+	> Company Identifier: 'com.yourcompany'
 
    	![Specify project details](Screenshots/Project Details.png "Specify Project Details")
 
