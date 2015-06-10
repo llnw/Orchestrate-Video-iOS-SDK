@@ -64,7 +64,7 @@ If you do not have CocoaPods installed, see the installation instructions on the
 1. 	Use sample Podfile and install all the required pods by using command ‘pod install’ in your application project directory.
     	The below text should be saved into a file named "Podfile":
     
-    	```objective-c
+	```objective-c
     	source 'https://github.com/CocoaPods/Specs.git'
     	source 'git@github.llnw.net:llnw/PodSpecs.git'
 
@@ -82,7 +82,7 @@ If you do not have CocoaPods installed, see the installation instructions on the
             end
       	  end
     	end
-    	```
+	```
 
 2.	In the “Build Phases” tab of your application target, add the following frameworks if missing
 	*  ‘AVFoundation’
@@ -109,7 +109,7 @@ There are two ways to try this Sample Application.
 
 1.	Manually setup the project by following the steps below.
 2.	Download the sample project as a starting point from Github
-	*  Get the entire project from here(Need to provide git repository link).
+	*  Get the entire project from [here](https://github.llnw.net/llnw/SampleApplication).
 	*  Run the ‘pod install’ command
 	*  Open and run the newly created workspace.
 
