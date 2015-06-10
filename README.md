@@ -245,8 +245,8 @@ NSDictionary *media;
 LVKLibrary *library;
 ```
 
--	Define initialization method to setup sample media and library.
-	Here you would need to give your Limelight Video Account credentials and media ID.
+	-	Define initialization method to setup sample media and library.
+		Here you would need to give your Limelight Video Account credentials and media ID.
 
 ```
 + (void)initialize {
@@ -260,7 +260,7 @@ LVKLibrary *library;
 }
 ```
 
--	In viewDidLoad, add following code
+	-	In viewDidLoad, add following code
 ```
 [library fetchMediaForId:media[@"Sample Media"]
                      success:^(LVKMedia *media) {
@@ -274,6 +274,7 @@ LVKLibrary *library;
                          NSLog(@"Media fetch error: %@", error);
                      }];
 ```
+
 4.	Run the application and you should be able to play the sample video.
 
 
