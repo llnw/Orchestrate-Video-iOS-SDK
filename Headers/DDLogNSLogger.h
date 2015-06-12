@@ -1,9 +1,8 @@
 //
 //  DDLogNSLogger.h
-//  lvp-ios-sdk
+//  lvk-ios-sdk
 //
-//  Created by Daniel Thompson on 2013-03-07.
-//  Copyright (c) 2013 Limelight Networks, Inc. All rights reserved.
+//  Copyright (c) 2015 Limelight Networks, Inc. All rights reserved.
 //
 
 #import "DDLog.h"

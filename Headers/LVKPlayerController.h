@@ -1,9 +1,8 @@
 //
 //  LVKPlayerController.h
-//  lvp-ios-sdk
+//  lvk-ios-sdk
 //
-//  Created by Woody Peterson on 1/7/14.
-//
+//  Copyright (c) 2015 Limelight Networks, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

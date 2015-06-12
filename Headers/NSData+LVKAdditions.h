@@ -1,9 +1,8 @@
 //
 //  NSData(LVKAdditions)
-//  lvk-ios
+//  lvk-ios-sdk
 //
-//  Created by Daniel Thompson on 2014-06-06
-//  Copyright (c) 2014 Limelight Networks, Inc. All rights reserved.
+//  Copyright (c) 2015 Limelight Networks, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

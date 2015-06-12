@@ -1,9 +1,8 @@
 //
 //  LVKChannel
-//  LimelightVideoKit
+//  lvk-ios-sdk
 //
-//  Created by Daniel Thompson on 2014-03-13
-//  Copyright (c) 2012 Limelight Networks, Inc. All rights reserved.
+//  Copyright (c) 2015 Limelight Networks, Inc. All rights reserved.
 //
 
 @class LVKMedia;

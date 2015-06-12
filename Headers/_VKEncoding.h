@@ -1,9 +1,8 @@
 //
 //  _VKEncoding.h
-//  lvp-ios-sdk
+//  lvk-ios-sdk
 //
-//  Created by Daniel Thompson on 2013-02-21.
-//  Copyright (c) 2013 Limelight Networks, Inc. All rights reserved.
+//  Copyright (c) 2015 Limelight Networks, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -33,6 +32,10 @@ static NSString *const kHTTPLiveStreaming = @"HttpLiveStreaming";
 static NSString *const kMobileH264 = @"MobileH264";
 static NSString *const kWidevine = @"Widevine";
 static NSString *const kWidevineOffline = @"WidevineOffline";
+static NSString *const kFlash = @"Flash";
+static NSString *const kMobile3gp = @"Mobile3gp";
+static NSString *const kMSS = @"SmoothStreaming";
+static NSString *const kHDS = @"HttpDynamicStreaming";
 
 // groups currently in use
 static NSString *const kLVKHighDefinitionGroup = @"HD";

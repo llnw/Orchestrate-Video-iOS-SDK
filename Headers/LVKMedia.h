@@ -1,14 +1,14 @@
 //
 //  LVKMedia
-//  LimelightVideoKit
+//  lvk-ios-sdk
 //
-//  Created by Daniel Thompson on 2012-12-11
-//  Copyright (c) 2012 Limelight Networks, Inc. All rights reserved.
+//  Copyright (c) 2015 Limelight Networks, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreMedia/CoreMedia.h>
 #import "LVKModel.h"
+
 
 @class RACSignal;
 @class RACDisposable;
@@ -42,7 +42,7 @@ typedef NS_ENUM(NSInteger, LVKMediaType) {
   /**
    * MMD Live (Multi-device Media Streaming), playable on iOS
    */
-  LVKMediaTypeEventStream
+  LVKMediaTypeLiveEvent
 };
 
 

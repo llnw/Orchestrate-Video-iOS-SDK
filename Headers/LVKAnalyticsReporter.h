@@ -1,9 +1,8 @@
 //
 //  LVKAnalyticsReporter.h
-//  lvp-ios-sdk
+//  lvk-ios-sdk
 //
-//  Created by Woody Peterson on 11/21/13.
-//
+//  Copyright (c) 2015 Limelight Networks, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

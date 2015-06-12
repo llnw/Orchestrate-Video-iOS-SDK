@@ -1,9 +1,8 @@
 //
 //  LVKLibrary(Media)
-//  lvp-ios-sdk
+//  lvk-ios-sdk
 //
-//  Created by Daniel Thompson on 2014-01-31
-//  Copyright (c) 2014 Limelight Networks, Inc. All rights reserved.
+//  Copyright (c) 2015 Limelight Networks, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -43,7 +42,8 @@
  * @return RACSignal providing all LVKMedia instances for the given channel ID,
  *         or an error on fetch failure.
  */
-- (RACSignal *)fetchAllMediaForChannelId:(NSString *)channelId;
+- (RACSignal *)fetchAllMediaForChannelId:(NSString *)channelId
+                              isLoadMore:(Boolean )isLoadMore;
 
 
 /**
