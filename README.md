@@ -1,5 +1,11 @@
 # Limelight Video Platform iOS SDK
 
+## Prerequisites
+    *	Target iOS 7 or 8
+    *	Xcode 6 or later
+    *   A Limelgiht Video Platform account 
+    
+
 ## Installation
 
 **To add LimelightVideoKit manually to your project use following steps.**
@@ -249,17 +255,17 @@ You are just few steps away from playing sample media in your application.
 	```
 
      -	Define initialization method to setup sample media and library.
-	Here you would need to give your Limelight Video Account credentials and media ID.
+	Here you would need to give your Limelight Video Account credentials including OrganiztionId, access key and secret key and media ID.
 
 	```objective-c
 	+ (void)initialize {
     	    if(!media){
-        	media = @{@"Sample Media":@"722171d57d8f4b66862defbfb77e7096"};
+        	media = @{@"Sample Media":@"<YOUR_MEDIA_ID>"};
             }	
     	    if(!library){
-      		library = [LVKLibrary 	libraryWithOrganizationId:@"f3008f5093b2471ea25ae270927bdefc"
-                  		                    	accessKey:@"Ft7epGLo37scuCq7Ln23OMyq8hk="
-                                  	            	   secret:@"cSspsyMDzVtQcMVfgqmhvf54hr4="];   }
+      		library = [LVKLibrary 	libraryWithOrganizationId:@"<YOUR_ORG_ID>"
+                  		                    	accessKey:@"<YOUR_ACCESS_KEY>"
+                                  	            	   secret:@"<YOUR_SECRET_KEY"];   }
 	}
 	```
 
@@ -288,6 +294,59 @@ You are just few steps away from playing sample media in your application.
        	#import "LVKPlayerViewCOntroller.h"
        	#import "LVKPlayerController.h"
        	```
+     -  After you follow all the steps, viewController.m should be as follows
+	
+	```objective-c
+	#import "ViewController.h"
+	#import "LVKLibrary.h"
+	#import "LVKLibrary+Media.h"
+	#import "LVKPlayerViewCOntroller.h"
+	#import "LVKPlayerController.h"
+
+	@interface ViewController ()
+
+	@end
+
+	NSDictionary *media;
+	LVKLibrary *library;
+
+	@implementation ViewController
+
+	+ (void)initialize {
+    	  if(!media){
+        	media = @{@"Sample Media": @"<YOUR_MEDIA_ID>"};
+    	  }	
+    	  if(!library){
+         	library = [LVKLibrary libraryWithOrganizationId:@"<YOUR_ORG_ID>""
+                                              accessKey:@"<YOUR_ACCESS_KEY>"
+                                                 secret:@"<YOUR_SECRET_KEY>"];
+    	  }
+	}
+	- (void)viewDidLoad {
+    	  [super viewDidLoad];
+    	  // Do any additional setup after loading the view, typically from a nib.
+    	  [library fetchMediaForId:media[@"Sample Media"]
+                success:^(LVKMedia *media) {
+                         LVKPlayerViewController *pvc = [LVKPlayerViewController playerForMedia:media];
+                         [pvc.player prepareToPlay];
+                         UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:pvc];
+                         [self presentViewController:nav animated:YES completion:^{
+                             NSLog(@"Player Successfully Loaded");
+                         }];
+                } failure:^(NSError *error) {
+                         NSLog(@"Media fetch error: %@", error);
+          }];
+ 
+	}
+
+	- (void)didReceiveMemoryWarning {
+    	  [super didReceiveMemoryWarning];
+    	  // Dispose of any resources that can be recreated.
+	}
+
+	@end
+	```
+
 4.	Run the application and you should be able to play the sample video.
 
 
