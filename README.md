@@ -2,9 +2,9 @@
 
 ## Prerequisites
 
-    *	Target iOS 7 or 8
-    *	Xcode 6 or later
-    *   A Limelgiht Video Platform account 
+*	Target iOS 7 or 8
+*	Xcode 6 or later
+*	A Limelgiht Video Platform account 
     
 
 ## Installation
