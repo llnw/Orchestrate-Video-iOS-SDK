@@ -1,6 +1,7 @@
 # Limelight Video Platform iOS SDK
 
 ## Prerequisites
+
     *	Target iOS 7 or 8
     *	Xcode 6 or later
     *   A Limelgiht Video Platform account 
@@ -317,7 +318,7 @@ You are just few steps away from playing sample media in your application.
         	media = @{@"Sample Media": @"<YOUR_MEDIA_ID>"};
     	  }	
     	  if(!library){
-         	library = [LVKLibrary libraryWithOrganizationId:@"<YOUR_ORG_ID>""
+         	library = [LVKLibrary libraryWithOrganizationId:@"<YOUR_ORG_ID>"
                                               accessKey:@"<YOUR_ACCESS_KEY>"
                                                  secret:@"<YOUR_SECRET_KEY>"];
     	  }
