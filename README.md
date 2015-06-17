@@ -79,7 +79,7 @@ If you do not have CocoaPods installed, see the installation instructions on the
 
     	xcodeproj '<Your_Project_Name>', 'Coverage' => :debug
 
-    	pod 'LimelightVideoKit', :git => 'https://github.com/llnw/limelight-sdk-ios.git'
+    	pod 'LimelightVideoKit', :git => 'https://github.com/llnw/OrchestrateVideo-iOS-SDK.git'
 
     	# Remove 64-bit build architecture from Pods targets
     	post_install do |installer|
@@ -184,7 +184,7 @@ The easiest way to add the SDK and its dependencies to your project is to use Co
 
 If you do not wish to use CocoaPods then add LimelightVideoKit manually to your project by using following steps
 
-6.	Download LimelightVideoSDK for iOS from [here](https://github.com/llnw/limelight-sdk-ios/releases/tag/V1.0).
+6.	Download LimelightVideoSDK for iOS from [here](https://github.com/llnw/OrchestrateVideo-iOS-SDK/releases/tag/V1.0).
 7.	Add the Library and Headers folder to your project
 8.	In the “Build Phases” tab of your application target, add the following frameworks
     *  ‘AVFoundation’
