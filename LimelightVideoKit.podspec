@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
 s.name     = 'LimelightVideoKit'
-  s.version  = '0.0.1'
+  s.version  = '1.0.0'
   s.license      = {
     :type => 'Commercial',
     :text => <<-LICENSE
-        Copyright (c) 2012-2013 Limelight Networks, Inc. All rights reserved.
+        Copyright (c) 2015 Limelight Networks, Inc. All rights reserved.
 
         http://www.limelight.com/tos/
       LICENSE
@@ -14,7 +14,7 @@ s.name     = 'LimelightVideoKit'
   s.requires_arc = true
   s.homepage = 'http://support.video.limelight.com'
   s.author   = { 'Limelight Networks' => 'support@llnw.com' }
-  s.source   = { :git => 'https://github.llnw.net/llnw/limelight-sdk-ios.git',
+  s.source   = { :git => 'https://github.com/llnw/OrchestrateVideo-iOS-SDK.git',
                  :tag => s.version.to_s}
   s.source_files = 'Headers/*.h'
   s.vendored_libraries = "Library/libLimelightVideoKitUniversal.a"

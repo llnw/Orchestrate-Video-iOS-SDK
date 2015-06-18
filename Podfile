@@ -1,5 +1,5 @@
 source 'https://github.com/CocoaPods/Specs.git'
-source 'git@github.llnw.net:llnw/PodSpecs.git'
+source 'https://github.com/llnw/PodSpecs.git'
 
 platform :ios, '8.0'
 
