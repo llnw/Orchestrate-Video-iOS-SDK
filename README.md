@@ -118,7 +118,9 @@ There are two ways to try this Sample Application.
 2.	Download the sample project as a starting point from Github
 	*  Get the entire project from [here](https://github.com/llnw/OrchestrateVideo-iOS-SDK/tree/master/SampleApplication).
 	*  Run the ‘pod install’ command
-	*  Open and run the newly created workspace.
+	*  Open the newly created workspace.
+	*  Replace placeholders in ViewController.m with appropriate values.
+           e.g. Replace <YOUR_MEDIA_ID> with sample media ID you want to play.
 
 ###Create the project in Xcode.
 If you do not have it already please install Xcode 6 or later.
