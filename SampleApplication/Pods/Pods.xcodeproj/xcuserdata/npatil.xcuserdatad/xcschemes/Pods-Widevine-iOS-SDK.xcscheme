@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "718F944AE7BECD3FEA37A232"
+               BlueprintIdentifier = "DA0EE11C9D14BC50E54457F3"
                BuildableName = "libPods-Widevine-iOS-SDK.a"
                BlueprintName = "Pods-Widevine-iOS-SDK"
                ReferencedContainer = "container:Pods.xcodeproj">
