@@ -42,8 +42,7 @@
  * @return RACSignal providing all LVKMedia instances for the given channel ID,
  *         or an error on fetch failure.
  */
-- (RACSignal *)fetchAllMediaForChannelId:(NSString *)channelId
-                              isLoadMore:(Boolean )isLoadMore;
+- (RACSignal *)fetchAllMediaForChannelId:(NSString *)channelId;
 
 
 /**
